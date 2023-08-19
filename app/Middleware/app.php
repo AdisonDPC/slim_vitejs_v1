@@ -37,7 +37,7 @@ return function (App $aApp) {
 
             d('Middleware (PHP-View)');
 
-            // Create PHP-View
+            // PHP-View.
             return null;
 
         }

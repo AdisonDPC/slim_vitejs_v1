@@ -69,9 +69,13 @@ export default defineConfig(({ command, mode }) => {
             plugins: [
                 liveReload([
 
-                    // Edit live reload paths according to your source code.
+                    // Edit live reload PATHs according to your source code.
 
+                    // PATH for all PHP files in public folder.
                     __dirname + '/public/**/*.php',
+
+                    // PATH for all PHP files in src/view folder.
+                    __dirname + '/src/view/**/*.php',
 
                 ]),
                 viteStaticCopy({

@@ -9,8 +9,8 @@ $strH3 = 'H3 HEADER';
 $cViteJS = new Tool_ViteJS(
     $aPage['aEnvironment']['VITE_SERVER_ORIGIN_URL'], 
     $aPage['aEnvironment']['VITE_SERVER_ORIGIN_PORT'], 
-    'js/app.js', 
-    'build', 
+    $aPage['aEnvironment']['VITE_ENTRY'], 
+    $aPage['aEnvironment']['VITE_OUTDIR'], 
     null, 
     null, 
     $aPage['aEnvironment']['APP_ENV'], 

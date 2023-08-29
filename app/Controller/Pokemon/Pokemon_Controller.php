@@ -1,13 +1,14 @@
 <?php
 
-namespace Controller;
+namespace App\Controller\Pokemon;
 
-use Psr\Container\ContainerInterface,
+use 
+    Psr\Container\ContainerInterface,
 
     Psr\Http\Message\ServerRequestInterface as Request,
     Psr\Http\Message\ResponseInterface as Response,
 
-    App\Model\Pokemon_Model;
+    App\Model\Pokemon\Pokemon_Model;
 
 class Pokemon_Controller {
 

@@ -1,70 +1,30 @@
 <?php
 
-use Psr\Container\ContainerInterface,
+use 
+    Psr\Container\ContainerInterface,
 
     Slim\App,
-    Slim\Views\Twig,
-    Slim\Views\PhpRenderer,
 
-    Twig\Extension\DebugExtension,
-
-    Illuminate\Database\Capsule\Manager;
+    App\Provider\View\View_Provider,
+    App\Provider\View\DB_Provider;
 
 return function (App $aApp) {
 
     $cContainer = $aApp -> getContainer();
 
-    // SERVICE TWIG FOR TEMPLATES.
-    
     $cContainer -> set('view', function(App $aApp, ContainerInterface $ciContainer) {
 
-        $aConfig = $ciContainer -> get('config');
+        $vView = new View_Provider($ciContainer);
 
-        $aProvider = [
-            'twig' => function () use ($aConfig) {
-
-                $strProvider = $aConfig['view']['provider'];
-
-                // Create Twig.
-                $tTwig = Twig::create($aConfig['view'][ $strProvider ]['path'], $aConfig['view'][ $strProvider ]['options']);
-
-                $tTwig -> addExtension(new DebugExtension());
-
-                return $tTwig;
-
-            },
-            'php-view' => function () use ($aConfig) {
-
-                $strProvider = $aConfig['view']['provider'];
-
-                // Create PHP-View (Renderer).
-                $prRederer = new PhpRenderer($aConfig['view'][ $strProvider ]['path'] . '/');
-
-                return $prRederer;
-
-            }
-        ];
-
-        return isset($aProvider[ $aConfig['view']['provider'] ]) ? $aProvider[ $aConfig['view']['provider'] ]() : $aProvider['twig']();
+        return $vView -> setView();
 
     });
-    
-    // SERVICE FACTORY FOR THE DATABASE (ORM MYSQL ELOQUENT | JSON | TXT).
 
     $cContainer -> set('db', function(App $aApp, ContainerInterface $ciContainer) {
 
-        $aConfig = $ciContainer -> get('config');
+        $vView = new View_Provider($ciContainer);
 
-        $mManager = new Manager;
-
-        if ($aConfig['db']['driver'] != 'mysql') return $aConfig['db'][$aConfig['db']['driver']];
-
-        $mManager -> addConnection($aConfig['db'][$aConfig['db']['driver']]);
-
-        $mManager -> setAsGlobal();
-        $mManager -> bootEloquent();
-
-        return $mManager;
+        return $vView -> setDB();
 
     });
 

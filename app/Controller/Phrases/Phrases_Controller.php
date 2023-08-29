@@ -1,8 +1,9 @@
 <?php
 
-namespace Controller;
+namespace App\Controller\Phrases;
 
-use Psr\Container\ContainerInterface,
+use 
+    Psr\Container\ContainerInterface,
 
     Psr\Http\Message\ServerRequestInterface as Request,
     Psr\Http\Message\ResponseInterface as Response;

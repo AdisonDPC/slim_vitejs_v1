@@ -1,10 +1,16 @@
 <?php
 
-use Psr\Container\ContainerInterface,
+use 
+    Psr\Container\ContainerInterface,
 
     Slim\App,
 
-    Slim\Views\TwigMiddleware;
+    App\Middleware\DB\DB_Middleware,
+    App\Middleware\View\View_Middleware,
+    App\Middleware\Whoops\Whoops_Middleware,
+
+    App\Middleware\General\Before_Middleware,
+    App\Middleware\General\After_Middleware;
 
 return function (App $aApp) {
 
@@ -19,57 +25,45 @@ return function (App $aApp) {
     // Add the Slim built-in routing middleware.
     $aApp -> addRoutingMiddleware();
 
-    // Handle exceptions.
-    $aApp -> addErrorMiddleware(true, true, true);
+    $bDisplayErrorDetails = $aConfig['app']['debug'];
+
+    if ($bDisplayErrorDetails) {
+        (new Whoops_Middleware($cContainer)) -> setWhoops($aApp);
+
+        $emError = null;
+    }
+    else
+        // Handle exceptions | Add Error Middleware.
+        $emError = $aApp -> addErrorMiddleware(false, true, true);
 
     // BEGIN - Middleware (Twig | PHP-View).
 
-    $aProvider = [
-        'twig' => function () use ($aApp) {
-
-            d('Middleware (Twig)');
-
-            // Twig.
-            $aApp -> add(TwigMiddleware::createFromContainer($aApp));
-
-        },
-        'php-view' => function () use ($aApp) {
-
-            d('Middleware (PHP-View)');
-
-            // PHP-View.
-            return null;
-
-        }
-    ];
-
-    if (isset($aProvider[ $aConfig['view']['provider'] ]))
-        $aProvider[ $aConfig['view']['provider'] ]();
-    else
-        $aProvider['twig']();
+    (new View_Middleware($cContainer)) -> setView($aApp);
 
     // END - Middleware (Twig | PHP-View).
 
-    // BEGIN - APP MIDDLEWARE.
+    // BEGIN - Middleware (APP).
 
     $cContainer -> set('DB_Middleware', function(App $aApp, ContainerInterface $ciContainer) {
 
-        return new \Middleware\DB_Middleware($ciContainer);
+        return new DB_Middleware($ciContainer);
 
     });
 
     $cContainer -> set('Before_Middleware', function(App $aApp, ContainerInterface $ciContainer) {
 
-        return new \Middleware\Before_Middleware($ciContainer);
+        return new Before_Middleware($ciContainer);
 
     });
 
     $cContainer -> set('After_Middleware', function(App $aApp, ContainerInterface $ciContainer) {
 
-        return new \Middleware\After_Middleware($ciContainer);
+        return new After_Middleware($ciContainer);
 
     });
 
-    // END - APP MIDDLEWARE.
+    // END - Middleware (APP).
+
+    return $emError;
 
 };

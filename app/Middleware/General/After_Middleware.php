@@ -1,15 +1,16 @@
 <?php
 
-namespace Middleware;
+namespace App\Middleware\General;
 
-use Psr\Container\ContainerInterface,
+use 
+    Psr\Container\ContainerInterface,
 
     Psr\Http\Message\ServerRequestInterface as Request,
     Psr\Http\Server\RequestHandlerInterface as RequestHandler, 
     
     Slim\Psr7\Response;
 
-class Before_Middleware {
+class After_Middleware {
     
     protected $ciContainer;
 
@@ -23,11 +24,7 @@ class Before_Middleware {
 
         $rResponse = $rhHandler -> handle($rRequest);
 
-        $strContent = (string)$rResponse -> getBody();
-
-        $rResponse = new Response;
-
-        $rResponse -> getBody() -> write('BEFORE ' . $strContent);
+        $rResponse -> getBody() -> write(' AFTER');
 
         return $rResponse;
 

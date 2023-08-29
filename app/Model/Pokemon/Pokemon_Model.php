@@ -1,6 +1,6 @@
 <?php
 
-namespace Model;
+namespace App\Model\Pokemon;
 
 use Illuminate\Database\Eloquent\Model;
 

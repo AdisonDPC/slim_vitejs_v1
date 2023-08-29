@@ -1,16 +1,17 @@
 <?php
 
-namespace Middleware;
+namespace App\Middleware\General;
 
-use Psr\Container\ContainerInterface,
+use 
+    Psr\Container\ContainerInterface,
 
     Psr\Http\Message\ServerRequestInterface as Request,
     Psr\Http\Server\RequestHandlerInterface as RequestHandler, 
     
     Slim\Psr7\Response;
 
-class DB_Middleware {
-
+class Before_Middleware {
+    
     protected $ciContainer;
 
     public function __construct (ContainerInterface $ciContainer) { 
@@ -21,11 +22,13 @@ class DB_Middleware {
 
     public function __invoke (Request $rRequest, RequestHandler $rhHandler): Response {
 
-        $aConfig = $this -> ciContainer -> get('config');
-
         $rResponse = $rhHandler -> handle($rRequest);
 
-        $rResponse -> getBody() -> write('Driver is: ' . $aConfig['db']['driver'] . '.');
+        $strContent = (string)$rResponse -> getBody();
+
+        $rResponse = new Response;
+
+        $rResponse -> getBody() -> write('BEFORE ' . $strContent);
 
         return $rResponse;
 

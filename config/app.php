@@ -11,7 +11,7 @@ $aSettings = [
 
     'name' => isset($_ENV['APP_NAME']) && $_ENV['APP_NAME'] != '' ? $_ENV['APP_NAME'] : 'Slim APP',
     'env' => isset($_ENV['APP_ENV']) && $_ENV['APP_ENV'] != '' ? $_ENV['APP_ENV'] : 'devel',
-    'debug' => isset($_ENV['APP_DEBUG']) && $_ENV['APP_DEBUG'] != '' ? $_ENV['APP_DEBUG'] : true,
+    'debug' => isset($_ENV['APP_DEBUG']) ? $_ENV['APP_DEBUG'] === 'true' : true,
     'url' => isset($_ENV['APP_URL']) && $_ENV['APP_URL'] != '' ? $_ENV['APP_URL'] : 'localhost'
 
 ];

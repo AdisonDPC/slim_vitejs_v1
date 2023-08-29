@@ -1,13 +1,14 @@
 <?php
 
-namespace Controller;
+namespace App\Controller\User;
 
-use Psr\Container\ContainerInterface,
+use 
+    Psr\Container\ContainerInterface,
 
     Psr\Http\Message\ServerRequestInterface as Request,
     Psr\Http\Message\ResponseInterface as Response,
 
-    App\Model\User_Model;
+    App\Model\User\User_Model;
 
 class User_Controller {
 

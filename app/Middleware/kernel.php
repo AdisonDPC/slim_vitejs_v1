@@ -25,20 +25,30 @@ return function (App $aApp) {
     // Add the Slim built-in routing middleware.
     $aApp -> addRoutingMiddleware();
 
-    $bDisplayErrorDetails = $aConfig['app']['debug'];
+    // BEGIN - Middleware (Debug).
 
-    if ($bDisplayErrorDetails) {
-        (new Whoops_Middleware($cContainer)) -> setWhoops($aApp);
+    $emError = null;
 
-        $emError = null;
+    $bDebug = $aConfig['app']['debug'];
+
+    if ($bDebug) {
+        $strType = $aConfig['exception']['renderer']['type'];
+
+        if ($strType === 'whoops')
+            (new Whoops_Middleware($aApp)) -> setWhoops($aApp);
+        else
+            // Handle exceptions | Add Error Middleware.
+            $emError = $aApp -> addErrorMiddleware($bDebug, true, true);
     }
     else
         // Handle exceptions | Add Error Middleware.
-        $emError = $aApp -> addErrorMiddleware(false, true, true);
+        $emError = $aApp -> addErrorMiddleware($bDebug, true, true);
+
+    // END - Middleware (Debug).
 
     // BEGIN - Middleware (Twig | PHP-View).
 
-    (new View_Middleware($cContainer)) -> setView($aApp);
+    (new View_Middleware($aApp)) -> setView($aApp);
 
     // END - Middleware (Twig | PHP-View).
 

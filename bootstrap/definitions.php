@@ -11,8 +11,10 @@ return [
 
         $aConfig = [
             'app' => require __DIR__ . '/../config/app.php',
+            'exception' => require __DIR__ . '/../config/exception.php',
             'db' => require __DIR__ . '/../config/db.php',
-            'view' => require __DIR__ . '/../config/view.php'
+            'view' => require __DIR__ . '/../config/view.php',
+            'whoops' => require __DIR__ . '/../config/whoops.php'
         ];
 
         return $aConfig;

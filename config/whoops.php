@@ -3,7 +3,7 @@
 // Settings (WHOOPS).
 $aSettings = [
 
-    'options' => [ 'enable' => true ]
+    'options' => [ 'enable' => isset($_ENV['WHOOPS_ENABLED']) ? $_ENV['WHOOPS_ENABLED'] === 'true' : true ]
 
 ];
 

@@ -3,8 +3,6 @@
 namespace App\Middleware\Whoops;
 
 use 
-    DI\Container,
-
     Slim\App,
 
     Zeuxisoo\Whoops\Slim\WhoopsMiddleware;
@@ -13,11 +11,13 @@ use
 
 class Whoops_Middleware {
     
+    protected $aApp;
     protected $cContainer;
 
-    public function __construct (Container $cContainer) { 
+    public function __construct (App $aApp) { 
 
-        $this -> cContainer = $cContainer;
+        $this -> aApp = $aApp;
+        $this -> cContainer = $aApp -> getContainer();
     
     }
 

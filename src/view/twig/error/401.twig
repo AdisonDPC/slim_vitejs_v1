@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+  <head>
+
+    <title>{{ aPage.strTitle }}</title>
+
+    <meta name="description" content="{{ aPage.strDescription }}">
+
+  </head>
+  <body>
+
+    {% for mixKeyA, mixValueA in aPage.aException %}
+
+        {% if mixKeyA == 'CODE' %}
+
+            <h1>{{ mixValueA }}</h1>
+
+        {% elseif mixKeyA == 'MESSAGE' %}
+
+            <h2>{{ mixValueA }}</h2>
+
+        {% elseif mixKeyA == 'TRACE' %}
+
+            <div>
+                <span><b> - {{ mixKeyA }}:</b></span>
+                <br>
+
+                {% for mixKeyB, mixValueB in mixValueA %}
+
+                    <ul>
+
+                        {% for mixKeyC, mixValueC in mixValueB %}
+
+                            <li>
+
+                                {% if mixKeyC == 'args' %}
+
+                                    <span><b>{{ mixKeyC }}:</b> {{ mixValueC | json_encode() }}</span>
+
+                                {% else %}
+                                
+                                    <span><b>{{ mixKeyC }}:</b> {{ mixValueC }}</span>
+                                
+                                {% endif %}
+
+                            </li>
+
+                        {% endfor %}
+
+                    </ul>
+
+                {% endfor %}
+
+            </div>
+
+        {% else %}
+
+            <div>
+                <span><b> - {{ mixKeyA }}:</b> {{ mixValueA }}</span>
+            </div>
+
+        {% endif %}
+
+    {% endfor %}
+
+    <h4>Current URL: {{ current_url() }}</h4>
+
+    <div>
+      <span>By ADPCProjects</span>
+    </div>
+  </body>
+</html>

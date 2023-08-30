@@ -3,8 +3,6 @@
 namespace App\Middleware\View;
 
 use 
-    DI\Container,
-
     Slim\App,
 
     Slim\Views\TwigMiddleware;
@@ -13,11 +11,13 @@ use
 
 class View_Middleware {
     
+    protected $aApp;
     protected $cContainer;
 
-    public function __construct (Container $cContainer) { 
+    public function __construct (App $aApp) { 
 
-        $this -> cContainer = $cContainer;
+        $this -> aApp = $aApp;
+        $this -> cContainer = $aApp -> getContainer();
     
     }
 

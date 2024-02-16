@@ -87,7 +87,7 @@ export default defineConfig(({ command, mode }) => {
 
                 ]),
                 viteStaticCopy({
-                    flatten: false,
+                    structured: false,
                     targets: [
                         {
                             src: 'template/libs',

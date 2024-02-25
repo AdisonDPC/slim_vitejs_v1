@@ -6,6 +6,7 @@ import.meta.glob([
 ]);
 
 import '@/css/app.css'
+import '@/sass/app.scss'
 
 console.log(__APP_NAME__);
 console.log(__APP_ENV__);

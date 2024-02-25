@@ -121,7 +121,11 @@ export default defineConfig(({ command, mode }) => {
                 outDir: path.resolve(__dirname, 'public/' + objEnv.VITE_OUTDIR),
                 emptyOutDir: true,
                 rollupOptions: {
-                    input: path.resolve(__dirname, 'src/' + objEnv.VITE_ENTRY),
+                    input: [
+                        path.resolve(__dirname, 'src/' + objEnv.VITE_ENTRY),
+
+                        path.resolve(__dirname, 'src/js/vitejs.js')
+                    ],
                     output: {
                         assetFileNames: (mixAssetInfo) => {
 

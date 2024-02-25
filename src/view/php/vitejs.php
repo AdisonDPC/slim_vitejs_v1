@@ -24,6 +24,8 @@ $strImagePHP = $cViteJS -> mtdAssetURL('image/static/php.svg');
 
 d($aPage['aEnvironment'], $cViteJS -> mtdGetProperties(), $cViteJS -> mtdManifest());
 
+$cViteJS -> mtdSetEntry('js/vitejs.js'); 
+
 ?>
 
 <!doctype html>

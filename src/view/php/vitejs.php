@@ -56,7 +56,7 @@ $cViteJS -> mtdSetEntry('js/vitejs.js');
 
         <div id="app"></div>
 
-        <?= $cViteJS -> mtdInit() ?>
+        <?= $cViteJS -> mtdInit(); ?>
 
     </body>
 </html>

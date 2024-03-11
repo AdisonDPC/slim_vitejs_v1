@@ -28,7 +28,8 @@ class ViteJS_Controller {
             'aPage' =>  [
                 'strTitle' => 'Welcome - Slim + (PHP - View)',
                 'strDescription' => 'Welcome to the oficial page Slim + (PHP - View).',
-                'aEnvironment' => $_ENV
+                'aEnvironment' => $_ENV,
+                'cViteJS' => $cViteJS
             ]
         ]);
 

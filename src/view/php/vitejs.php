@@ -6,16 +6,7 @@ $strH1 = 'H1 HEADER';
 $strH2 = 'H2 HEADER';
 $strH3 = 'H3 HEADER';
 
-$cViteJS = new Tool_ViteJS(
-    $aPage['aEnvironment']['VITE_SERVER_ORIGIN_URL'], 
-    $aPage['aEnvironment']['VITE_SERVER_ORIGIN_PORT'], 
-    $aPage['aEnvironment']['VITE_ENTRY'], 
-    $aPage['aEnvironment']['VITE_OUTDIR'], 
-    null, 
-    null, 
-    $aPage['aEnvironment']['APP_ENV'], 
-    $aPage['aEnvironment']['APP_ENV'] == 'devel'
-);
+$cViteJS = $aPage['cViteJS'];
 
 $strDomain = $cViteJS -> mtdGetHost() . ':' . $cViteJS -> mtdGetPort();
 

@@ -1,0 +1,638 @@
+{
+  "favicon/vite.svg": {
+    "file": "assets/img/asset-vite-1-4a748afd.svg",
+    "src": "image/dynamic/vite.svg"
+  },
+  "image/dynamic/javascript.svg": {
+    "file": "assets/img/asset-javascript-155-8dac5379.svg",
+    "src": "image/dynamic/javascript.svg"
+  },
+  "image/dynamic/vite.svg": {
+    "file": "assets/img/asset-vite-1-4a748afd.svg",
+    "src": "image/dynamic/vite.svg"
+  },
+  "image/static/php.svg": {
+    "file": "assets/img/asset-php-3-bf8b7e48.svg",
+    "src": "image/static/php.svg"
+  },
+  "image/static/pokemon/001.png": {
+    "file": "assets/img/asset-001-4-7233d8d8.png",
+    "src": "image/static/pokemon/001.png"
+  },
+  "image/static/pokemon/002.png": {
+    "file": "assets/img/asset-002-5-82013427.png",
+    "src": "image/static/pokemon/002.png"
+  },
+  "image/static/pokemon/003.png": {
+    "file": "assets/img/asset-003-19-106d0040.png",
+    "src": "image/static/pokemon/003.png"
+  },
+  "image/static/pokemon/004.png": {
+    "file": "assets/img/asset-004-6-0c8e36e3.png",
+    "src": "image/static/pokemon/004.png"
+  },
+  "image/static/pokemon/005.png": {
+    "file": "assets/img/asset-005-7-6de10f11.png",
+    "src": "image/static/pokemon/005.png"
+  },
+  "image/static/pokemon/006.png": {
+    "file": "assets/img/asset-006-9-b6d5b8ee.png",
+    "src": "image/static/pokemon/006.png"
+  },
+  "image/static/pokemon/007.png": {
+    "file": "assets/img/asset-007-8-37cda7bf.png",
+    "src": "image/static/pokemon/007.png"
+  },
+  "image/static/pokemon/008.png": {
+    "file": "assets/img/asset-008-10-5fc6739c.png",
+    "src": "image/static/pokemon/008.png"
+  },
+  "image/static/pokemon/009.png": {
+    "file": "assets/img/asset-009-12-ba0a6b63.png",
+    "src": "image/static/pokemon/009.png"
+  },
+  "image/static/pokemon/010.png": {
+    "file": "assets/img/asset-010-11-49eb7f6c.png",
+    "src": "image/static/pokemon/010.png"
+  },
+  "image/static/pokemon/011.png": {
+    "file": "assets/img/asset-011-13-945f2aca.png",
+    "src": "image/static/pokemon/011.png"
+  },
+  "image/static/pokemon/012.png": {
+    "file": "assets/img/asset-012-15-0d412d9b.png",
+    "src": "image/static/pokemon/012.png"
+  },
+  "image/static/pokemon/013.png": {
+    "file": "assets/img/asset-013-14-d8cf2e85.png",
+    "src": "image/static/pokemon/013.png"
+  },
+  "image/static/pokemon/014.png": {
+    "file": "assets/img/asset-014-16-75eb591f.png",
+    "src": "image/static/pokemon/014.png"
+  },
+  "image/static/pokemon/015.png": {
+    "file": "assets/img/asset-015-18-87bec9bd.png",
+    "src": "image/static/pokemon/015.png"
+  },
+  "image/static/pokemon/016.png": {
+    "file": "assets/img/asset-016-17-cabe3212.png",
+    "src": "image/static/pokemon/016.png"
+  },
+  "image/static/pokemon/017.png": {
+    "file": "assets/img/asset-017-20-85d27fdd.png",
+    "src": "image/static/pokemon/017.png"
+  },
+  "image/static/pokemon/018.png": {
+    "file": "assets/img/asset-018-21-0f2cf5f3.png",
+    "src": "image/static/pokemon/018.png"
+  },
+  "image/static/pokemon/019.png": {
+    "file": "assets/img/asset-019-28-6e8702f5.png",
+    "src": "image/static/pokemon/019.png"
+  },
+  "image/static/pokemon/020.png": {
+    "file": "assets/img/asset-020-22-d352b859.png",
+    "src": "image/static/pokemon/020.png"
+  },
+  "image/static/pokemon/021.png": {
+    "file": "assets/img/asset-021-23-4dd0fce5.png",
+    "src": "image/static/pokemon/021.png"
+  },
+  "image/static/pokemon/022.png": {
+    "file": "assets/img/asset-022-24-e34e7a7e.png",
+    "src": "image/static/pokemon/022.png"
+  },
+  "image/static/pokemon/023.png": {
+    "file": "assets/img/asset-023-25-00d8d5e6.png",
+    "src": "image/static/pokemon/023.png"
+  },
+  "image/static/pokemon/024.png": {
+    "file": "assets/img/asset-024-26-f1e38593.png",
+    "src": "image/static/pokemon/024.png"
+  },
+  "image/static/pokemon/025.png": {
+    "file": "assets/img/asset-025-27-759ceafd.png",
+    "src": "image/static/pokemon/025.png"
+  },
+  "image/static/pokemon/026.png": {
+    "file": "assets/img/asset-026-29-e5671c5f.png",
+    "src": "image/static/pokemon/026.png"
+  },
+  "image/static/pokemon/027.png": {
+    "file": "assets/img/asset-027-30-6d1a14b1.png",
+    "src": "image/static/pokemon/027.png"
+  },
+  "image/static/pokemon/028.png": {
+    "file": "assets/img/asset-028-38-071c435e.png",
+    "src": "image/static/pokemon/028.png"
+  },
+  "image/static/pokemon/029.png": {
+    "file": "assets/img/asset-029-31-1fa164a6.png",
+    "src": "image/static/pokemon/029.png"
+  },
+  "image/static/pokemon/030.png": {
+    "file": "assets/img/asset-030-37-c4063d04.png",
+    "src": "image/static/pokemon/030.png"
+  },
+  "image/static/pokemon/031.png": {
+    "file": "assets/img/asset-031-32-81109380.png",
+    "src": "image/static/pokemon/031.png"
+  },
+  "image/static/pokemon/032.png": {
+    "file": "assets/img/asset-032-33-4216cc68.png",
+    "src": "image/static/pokemon/032.png"
+  },
+  "image/static/pokemon/033.png": {
+    "file": "assets/img/asset-033-34-b90aea26.png",
+    "src": "image/static/pokemon/033.png"
+  },
+  "image/static/pokemon/034.png": {
+    "file": "assets/img/asset-034-35-b018c196.png",
+    "src": "image/static/pokemon/034.png"
+  },
+  "image/static/pokemon/035.png": {
+    "file": "assets/img/asset-035-36-4190637a.png",
+    "src": "image/static/pokemon/035.png"
+  },
+  "image/static/pokemon/036.png": {
+    "file": "assets/img/asset-036-39-7a3c3106.png",
+    "src": "image/static/pokemon/036.png"
+  },
+  "image/static/pokemon/037.png": {
+    "file": "assets/img/asset-037-40-cded4e96.png",
+    "src": "image/static/pokemon/037.png"
+  },
+  "image/static/pokemon/038.png": {
+    "file": "assets/img/asset-038-42-e60b06bf.png",
+    "src": "image/static/pokemon/038.png"
+  },
+  "image/static/pokemon/039.png": {
+    "file": "assets/img/asset-039-43-2d8fa642.png",
+    "src": "image/static/pokemon/039.png"
+  },
+  "image/static/pokemon/040.png": {
+    "file": "assets/img/asset-040-41-8150678a.png",
+    "src": "image/static/pokemon/040.png"
+  },
+  "image/static/pokemon/041.png": {
+    "file": "assets/img/asset-041-44-249cd650.png",
+    "src": "image/static/pokemon/041.png"
+  },
+  "image/static/pokemon/042.png": {
+    "file": "assets/img/asset-042-45-ad93bff7.png",
+    "src": "image/static/pokemon/042.png"
+  },
+  "image/static/pokemon/043.png": {
+    "file": "assets/img/asset-043-46-035edf8e.png",
+    "src": "image/static/pokemon/043.png"
+  },
+  "image/static/pokemon/044.png": {
+    "file": "assets/img/asset-044-48-bc4fdbea.png",
+    "src": "image/static/pokemon/044.png"
+  },
+  "image/static/pokemon/045.png": {
+    "file": "assets/img/asset-045-47-9c2b9e9a.png",
+    "src": "image/static/pokemon/045.png"
+  },
+  "image/static/pokemon/046.png": {
+    "file": "assets/img/asset-046-49-7e46da94.png",
+    "src": "image/static/pokemon/046.png"
+  },
+  "image/static/pokemon/047.png": {
+    "file": "assets/img/asset-047-50-ba02844e.png",
+    "src": "image/static/pokemon/047.png"
+  },
+  "image/static/pokemon/048.png": {
+    "file": "assets/img/asset-048-51-9cc1605a.png",
+    "src": "image/static/pokemon/048.png"
+  },
+  "image/static/pokemon/049.png": {
+    "file": "assets/img/asset-049-56-1558c135.png",
+    "src": "image/static/pokemon/049.png"
+  },
+  "image/static/pokemon/050.png": {
+    "file": "assets/img/asset-050-52-f7e2775b.png",
+    "src": "image/static/pokemon/050.png"
+  },
+  "image/static/pokemon/051.png": {
+    "file": "assets/img/asset-051-53-092f3ff5.png",
+    "src": "image/static/pokemon/051.png"
+  },
+  "image/static/pokemon/052.png": {
+    "file": "assets/img/asset-052-54-893353ba.png",
+    "src": "image/static/pokemon/052.png"
+  },
+  "image/static/pokemon/053.png": {
+    "file": "assets/img/asset-053-55-b477fdc0.png",
+    "src": "image/static/pokemon/053.png"
+  },
+  "image/static/pokemon/054.png": {
+    "file": "assets/img/asset-054-57-87110a75.png",
+    "src": "image/static/pokemon/054.png"
+  },
+  "image/static/pokemon/055.png": {
+    "file": "assets/img/asset-055-58-343e4f5b.png",
+    "src": "image/static/pokemon/055.png"
+  },
+  "image/static/pokemon/056.png": {
+    "file": "assets/img/asset-056-59-e9b4fcec.png",
+    "src": "image/static/pokemon/056.png"
+  },
+  "image/static/pokemon/057.png": {
+    "file": "assets/img/asset-057-60-b320fad0.png",
+    "src": "image/static/pokemon/057.png"
+  },
+  "image/static/pokemon/058.png": {
+    "file": "assets/img/asset-058-61-05f90f8f.png",
+    "src": "image/static/pokemon/058.png"
+  },
+  "image/static/pokemon/059.png": {
+    "file": "assets/img/asset-059-62-4461b189.png",
+    "src": "image/static/pokemon/059.png"
+  },
+  "image/static/pokemon/060.png": {
+    "file": "assets/img/asset-060-63-cdec53c7.png",
+    "src": "image/static/pokemon/060.png"
+  },
+  "image/static/pokemon/061.png": {
+    "file": "assets/img/asset-061-64-06f1cf55.png",
+    "src": "image/static/pokemon/061.png"
+  },
+  "image/static/pokemon/062.png": {
+    "file": "assets/img/asset-062-65-955dd03a.png",
+    "src": "image/static/pokemon/062.png"
+  },
+  "image/static/pokemon/063.png": {
+    "file": "assets/img/asset-063-66-e1c271b8.png",
+    "src": "image/static/pokemon/063.png"
+  },
+  "image/static/pokemon/064.png": {
+    "file": "assets/img/asset-064-67-831d284a.png",
+    "src": "image/static/pokemon/064.png"
+  },
+  "image/static/pokemon/065.png": {
+    "file": "assets/img/asset-065-73-8f1dfebe.png",
+    "src": "image/static/pokemon/065.png"
+  },
+  "image/static/pokemon/066.png": {
+    "file": "assets/img/asset-066-68-699145a8.png",
+    "src": "image/static/pokemon/066.png"
+  },
+  "image/static/pokemon/067.png": {
+    "file": "assets/img/asset-067-69-6c815149.png",
+    "src": "image/static/pokemon/067.png"
+  },
+  "image/static/pokemon/068.png": {
+    "file": "assets/img/asset-068-70-5d124f44.png",
+    "src": "image/static/pokemon/068.png"
+  },
+  "image/static/pokemon/069.png": {
+    "file": "assets/img/asset-069-71-9e1a107b.png",
+    "src": "image/static/pokemon/069.png"
+  },
+  "image/static/pokemon/070.png": {
+    "file": "assets/img/asset-070-72-3de54d7c.png",
+    "src": "image/static/pokemon/070.png"
+  },
+  "image/static/pokemon/071.png": {
+    "file": "assets/img/asset-071-74-47c1fff8.png",
+    "src": "image/static/pokemon/071.png"
+  },
+  "image/static/pokemon/072.png": {
+    "file": "assets/img/asset-072-77-f3d81b1b.png",
+    "src": "image/static/pokemon/072.png"
+  },
+  "image/static/pokemon/073.png": {
+    "file": "assets/img/asset-073-76-14c5a462.png",
+    "src": "image/static/pokemon/073.png"
+  },
+  "image/static/pokemon/074.png": {
+    "file": "assets/img/asset-074-75-eb32b467.png",
+    "src": "image/static/pokemon/074.png"
+  },
+  "image/static/pokemon/075.png": {
+    "file": "assets/img/asset-075-78-7f5baf80.png",
+    "src": "image/static/pokemon/075.png"
+  },
+  "image/static/pokemon/076.png": {
+    "file": "assets/img/asset-076-79-c9738e2d.png",
+    "src": "image/static/pokemon/076.png"
+  },
+  "image/static/pokemon/077.png": {
+    "file": "assets/img/asset-077-80-a4e14c8e.png",
+    "src": "image/static/pokemon/077.png"
+  },
+  "image/static/pokemon/078.png": {
+    "file": "assets/img/asset-078-81-62d6b843.png",
+    "src": "image/static/pokemon/078.png"
+  },
+  "image/static/pokemon/079.png": {
+    "file": "assets/img/asset-079-82-e0802e52.png",
+    "src": "image/static/pokemon/079.png"
+  },
+  "image/static/pokemon/080.png": {
+    "file": "assets/img/asset-080-83-78c59860.png",
+    "src": "image/static/pokemon/080.png"
+  },
+  "image/static/pokemon/081.png": {
+    "file": "assets/img/asset-081-84-dd5162b1.png",
+    "src": "image/static/pokemon/081.png"
+  },
+  "image/static/pokemon/082.png": {
+    "file": "assets/img/asset-082-85-1e68484d.png",
+    "src": "image/static/pokemon/082.png"
+  },
+  "image/static/pokemon/083.png": {
+    "file": "assets/img/asset-083-86-19cb4412.png",
+    "src": "image/static/pokemon/083.png"
+  },
+  "image/static/pokemon/084.png": {
+    "file": "assets/img/asset-084-87-c4081df0.png",
+    "src": "image/static/pokemon/084.png"
+  },
+  "image/static/pokemon/085.png": {
+    "file": "assets/img/asset-085-88-87306fdd.png",
+    "src": "image/static/pokemon/085.png"
+  },
+  "image/static/pokemon/086.png": {
+    "file": "assets/img/asset-086-89-cbf86b4b.png",
+    "src": "image/static/pokemon/086.png"
+  },
+  "image/static/pokemon/087.png": {
+    "file": "assets/img/asset-087-90-d3aea3f5.png",
+    "src": "image/static/pokemon/087.png"
+  },
+  "image/static/pokemon/088.png": {
+    "file": "assets/img/asset-088-91-1d032143.png",
+    "src": "image/static/pokemon/088.png"
+  },
+  "image/static/pokemon/089.png": {
+    "file": "assets/img/asset-089-92-bbc4d735.png",
+    "src": "image/static/pokemon/089.png"
+  },
+  "image/static/pokemon/090.png": {
+    "file": "assets/img/asset-090-96-d1051fa7.png",
+    "src": "image/static/pokemon/090.png"
+  },
+  "image/static/pokemon/091.png": {
+    "file": "assets/img/asset-091-93-4510ded0.png",
+    "src": "image/static/pokemon/091.png"
+  },
+  "image/static/pokemon/092.png": {
+    "file": "assets/img/asset-092-94-23c69f67.png",
+    "src": "image/static/pokemon/092.png"
+  },
+  "image/static/pokemon/093.png": {
+    "file": "assets/img/asset-093-95-e21bab36.png",
+    "src": "image/static/pokemon/093.png"
+  },
+  "image/static/pokemon/094.png": {
+    "file": "assets/img/asset-094-97-b6549b80.png",
+    "src": "image/static/pokemon/094.png"
+  },
+  "image/static/pokemon/095.png": {
+    "file": "assets/img/asset-095-99-4f2496ae.png",
+    "src": "image/static/pokemon/095.png"
+  },
+  "image/static/pokemon/096.png": {
+    "file": "assets/img/asset-096-98-a258c5bc.png",
+    "src": "image/static/pokemon/096.png"
+  },
+  "image/static/pokemon/097.png": {
+    "file": "assets/img/asset-097-100-f874aa2f.png",
+    "src": "image/static/pokemon/097.png"
+  },
+  "image/static/pokemon/098.png": {
+    "file": "assets/img/asset-098-102-d8c82af6.png",
+    "src": "image/static/pokemon/098.png"
+  },
+  "image/static/pokemon/099.png": {
+    "file": "assets/img/asset-099-101-437b0e36.png",
+    "src": "image/static/pokemon/099.png"
+  },
+  "image/static/pokemon/100.png": {
+    "file": "assets/img/asset-100-103-1e56de55.png",
+    "src": "image/static/pokemon/100.png"
+  },
+  "image/static/pokemon/101.png": {
+    "file": "assets/img/asset-101-104-53ba2223.png",
+    "src": "image/static/pokemon/101.png"
+  },
+  "image/static/pokemon/102.png": {
+    "file": "assets/img/asset-102-105-20e609da.png",
+    "src": "image/static/pokemon/102.png"
+  },
+  "image/static/pokemon/103.png": {
+    "file": "assets/img/asset-103-106-ce28697b.png",
+    "src": "image/static/pokemon/103.png"
+  },
+  "image/static/pokemon/104.png": {
+    "file": "assets/img/asset-104-107-88ead79f.png",
+    "src": "image/static/pokemon/104.png"
+  },
+  "image/static/pokemon/105.png": {
+    "file": "assets/img/asset-105-108-223279b3.png",
+    "src": "image/static/pokemon/105.png"
+  },
+  "image/static/pokemon/106.png": {
+    "file": "assets/img/asset-106-109-983cc4ce.png",
+    "src": "image/static/pokemon/106.png"
+  },
+  "image/static/pokemon/107.png": {
+    "file": "assets/img/asset-107-110-1b811ffd.png",
+    "src": "image/static/pokemon/107.png"
+  },
+  "image/static/pokemon/108.png": {
+    "file": "assets/img/asset-108-115-76a98212.png",
+    "src": "image/static/pokemon/108.png"
+  },
+  "image/static/pokemon/109.png": {
+    "file": "assets/img/asset-109-111-fafb96d0.png",
+    "src": "image/static/pokemon/109.png"
+  },
+  "image/static/pokemon/110.png": {
+    "file": "assets/img/asset-110-113-2ea5a510.png",
+    "src": "image/static/pokemon/110.png"
+  },
+  "image/static/pokemon/111.png": {
+    "file": "assets/img/asset-111-112-6a747855.png",
+    "src": "image/static/pokemon/111.png"
+  },
+  "image/static/pokemon/112.png": {
+    "file": "assets/img/asset-112-114-8fabe62d.png",
+    "src": "image/static/pokemon/112.png"
+  },
+  "image/static/pokemon/113.png": {
+    "file": "assets/img/asset-113-116-82332292.png",
+    "src": "image/static/pokemon/113.png"
+  },
+  "image/static/pokemon/114.png": {
+    "file": "assets/img/asset-114-117-57e96fb7.png",
+    "src": "image/static/pokemon/114.png"
+  },
+  "image/static/pokemon/115.png": {
+    "file": "assets/img/asset-115-118-bc2424e7.png",
+    "src": "image/static/pokemon/115.png"
+  },
+  "image/static/pokemon/116.png": {
+    "file": "assets/img/asset-116-120-4b610c3a.png",
+    "src": "image/static/pokemon/116.png"
+  },
+  "image/static/pokemon/117.png": {
+    "file": "assets/img/asset-117-119-7c61fbb4.png",
+    "src": "image/static/pokemon/117.png"
+  },
+  "image/static/pokemon/118.png": {
+    "file": "assets/img/asset-118-121-38f84d1f.png",
+    "src": "image/static/pokemon/118.png"
+  },
+  "image/static/pokemon/119.png": {
+    "file": "assets/img/asset-119-122-44ed5c48.png",
+    "src": "image/static/pokemon/119.png"
+  },
+  "image/static/pokemon/120.png": {
+    "file": "assets/img/asset-120-123-c6d20159.png",
+    "src": "image/static/pokemon/120.png"
+  },
+  "image/static/pokemon/121.png": {
+    "file": "assets/img/asset-121-124-4e9cebb6.png",
+    "src": "image/static/pokemon/121.png"
+  },
+  "image/static/pokemon/122.png": {
+    "file": "assets/img/asset-122-125-9c46e520.png",
+    "src": "image/static/pokemon/122.png"
+  },
+  "image/static/pokemon/123.png": {
+    "file": "assets/img/asset-123-126-0e983e7e.png",
+    "src": "image/static/pokemon/123.png"
+  },
+  "image/static/pokemon/124.png": {
+    "file": "assets/img/asset-124-128-c3bf3395.png",
+    "src": "image/static/pokemon/124.png"
+  },
+  "image/static/pokemon/125.png": {
+    "file": "assets/img/asset-125-127-47e0902f.png",
+    "src": "image/static/pokemon/125.png"
+  },
+  "image/static/pokemon/126.png": {
+    "file": "assets/img/asset-126-131-8dc68104.png",
+    "src": "image/static/pokemon/126.png"
+  },
+  "image/static/pokemon/127.png": {
+    "file": "assets/img/asset-127-129-badba34a.png",
+    "src": "image/static/pokemon/127.png"
+  },
+  "image/static/pokemon/128.png": {
+    "file": "assets/img/asset-128-130-04ba885a.png",
+    "src": "image/static/pokemon/128.png"
+  },
+  "image/static/pokemon/129.png": {
+    "file": "assets/img/asset-129-133-df8fc8a1.png",
+    "src": "image/static/pokemon/129.png"
+  },
+  "image/static/pokemon/130.png": {
+    "file": "assets/img/asset-130-132-41d17760.png",
+    "src": "image/static/pokemon/130.png"
+  },
+  "image/static/pokemon/131.png": {
+    "file": "assets/img/asset-131-135-ffd98849.png",
+    "src": "image/static/pokemon/131.png"
+  },
+  "image/static/pokemon/132.png": {
+    "file": "assets/img/asset-132-134-5f7be2f2.png",
+    "src": "image/static/pokemon/132.png"
+  },
+  "image/static/pokemon/133.png": {
+    "file": "assets/img/asset-133-136-33ea993d.png",
+    "src": "image/static/pokemon/133.png"
+  },
+  "image/static/pokemon/134.png": {
+    "file": "assets/img/asset-134-142-3f4a86ef.png",
+    "src": "image/static/pokemon/134.png"
+  },
+  "image/static/pokemon/135.png": {
+    "file": "assets/img/asset-135-137-bf525c20.png",
+    "src": "image/static/pokemon/135.png"
+  },
+  "image/static/pokemon/136.png": {
+    "file": "assets/img/asset-136-138-a11d3f02.png",
+    "src": "image/static/pokemon/136.png"
+  },
+  "image/static/pokemon/137.png": {
+    "file": "assets/img/asset-137-139-28a6c05c.png",
+    "src": "image/static/pokemon/137.png"
+  },
+  "image/static/pokemon/138.png": {
+    "file": "assets/img/asset-138-141-dd398011.png",
+    "src": "image/static/pokemon/138.png"
+  },
+  "image/static/pokemon/139.png": {
+    "file": "assets/img/asset-139-140-3535ad24.png",
+    "src": "image/static/pokemon/139.png"
+  },
+  "image/static/pokemon/140.png": {
+    "file": "assets/img/asset-140-143-92bd67e3.png",
+    "src": "image/static/pokemon/140.png"
+  },
+  "image/static/pokemon/141.png": {
+    "file": "assets/img/asset-141-144-b651eaec.png",
+    "src": "image/static/pokemon/141.png"
+  },
+  "image/static/pokemon/142.png": {
+    "file": "assets/img/asset-142-145-5427b0a9.png",
+    "src": "image/static/pokemon/142.png"
+  },
+  "image/static/pokemon/143.png": {
+    "file": "assets/img/asset-143-153-1afd32e5.png",
+    "src": "image/static/pokemon/143.png"
+  },
+  "image/static/pokemon/144.png": {
+    "file": "assets/img/asset-144-148-d85d2a2d.png",
+    "src": "image/static/pokemon/144.png"
+  },
+  "image/static/pokemon/145.png": {
+    "file": "assets/img/asset-145-146-6435d62a.png",
+    "src": "image/static/pokemon/145.png"
+  },
+  "image/static/pokemon/146.png": {
+    "file": "assets/img/asset-146-147-f4d46f40.png",
+    "src": "image/static/pokemon/146.png"
+  },
+  "image/static/pokemon/147.png": {
+    "file": "assets/img/asset-147-149-0172fb6a.png",
+    "src": "image/static/pokemon/147.png"
+  },
+  "image/static/pokemon/148.png": {
+    "file": "assets/img/asset-148-151-9a650c96.png",
+    "src": "image/static/pokemon/148.png"
+  },
+  "image/static/pokemon/149.png": {
+    "file": "assets/img/asset-149-150-4bd7549c.png",
+    "src": "image/static/pokemon/149.png"
+  },
+  "image/static/pokemon/150.png": {
+    "file": "assets/img/asset-150-152-d99adeb9.png",
+    "src": "image/static/pokemon/150.png"
+  },
+  "image/static/pokemon/151.png": {
+    "file": "assets/img/asset-151-154-9991aee5.png",
+    "src": "image/static/pokemon/151.png"
+  },
+  "js/app.css": {
+    "file": "assets/css/asset-app-157-61de16b7.css",
+    "src": "js/app.css"
+  },
+  "js/app.js": {
+    "assets": [
+      "assets/img/asset-javascript-155-8dac5379.svg",
+      "assets/img/asset-vite-1-4a748afd.svg"
+    ],
+    "css": [
+      "assets/css/asset-app-157-61de16b7.css"
+    ],
+    "file": "assets/js/entry-app-1-7726ef37.js",
+    "isEntry": true,
+    "src": "js/app.js"
+  }
+}

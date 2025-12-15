@@ -6,11 +6,11 @@ class Tool_View {
 
     public function __construct () {}
 
-    public static function mtdRenderSnipet ($strPATH, $objParams_) {
+    public static function mtdRenderSnipet(string $strPATH, array $aParams = []): void {
 
-        $objParams = $objParams_;
+        extract($aParams, EXTR_SKIP);
 
-        require $strPATH;
+        include $strPATH;
 
     }
 

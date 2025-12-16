@@ -4,7 +4,9 @@ use
     Psr\Http\Message\ServerRequestInterface as Request,
     Psr\Http\Message\ResponseInterface as Response, 
     
-    Slim\App;
+    Slim\App,
+
+    App\Tool\Tool_ViteJS;
 
 return function (App $aApp) {
     
@@ -243,11 +245,25 @@ return function (App $aApp) {
 
         if ($aConfig['view']['provider'] != 'php-view') { $rResponse -> getBody() -> write('Error: Provider not supported.'); return $rResponse; }
 
+        $aEnvironment = $_ENV;
+
+        $cViteJS = new Tool_ViteJS(
+            $aEnvironment['VITE_SERVER_ORIGIN_URL'], 
+            $aEnvironment['VITE_SERVER_ORIGIN_PORT'], 
+            $aEnvironment['VITE_ENTRY'], 
+            $aEnvironment['VITE_OUTDIR'], 
+            null, 
+            null, 
+            $aEnvironment['APP_ENV'], 
+            $aEnvironment['APP_ENV'] == 'devel'
+        );
+
         return $this -> get('view') -> render($rResponse, 'vitejs.php', [
             'aPage' =>  [
                 'strTitle' => 'Welcome - Slim + (PHP - View)',
                 'strDescription' => 'Welcome to the oficial page Slim + (PHP - View).',
-                'aEnvironment' => $_ENV
+                'aEnvironment' => $_ENV,
+                'cViteJS' => $cViteJS
             ]
         ]);
         

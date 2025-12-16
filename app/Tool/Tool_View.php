@@ -12,7 +12,7 @@ class Tool_View {
 
     // use App\Tool\Tool_View;
 
-    // return $this -> ciContainer -> get('view') -> render($rResponse, 'module/wipei/back/default/default.php', [
+    // return $this -> ciContainer -> get('view') -> render($rResponse, 'module/limitless/back/default/default.php', [
     //     'aPage' =>  [
     //         'strTitle' => 'Welcome - Slim + (PHP - View)',
     //         'strDescription' => 'Welcome to the oficial page Slim + (PHP - View).',
